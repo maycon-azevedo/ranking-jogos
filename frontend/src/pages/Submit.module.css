@@ -1,0 +1,264 @@
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.gamesList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.gameHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.gameName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.skipLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+
+.skipLabel input {
+  accent-color: var(--accent);
+  width: 14px;
+  height: 14px;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stepperBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.12s;
+}
+
+.stepperBtn:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.stepperBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.stepperValue {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 800;
+  border: 2px solid var(--border);
+}
+
+.stepperHint {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.alreadyDone {
+  margin-top: 18px;
+}
+
+.doneTags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.doneTag {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 16px;
+  margin-top: 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submitBtn:disabled {
+  cursor: not-allowed;
+}
+
+.allDone {
+  text-align: center;
+  padding-top: 80px;
+  animation: fadeIn 0.3s ease;
+}
+
+.allDoneIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: var(--accent);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.allDoneTitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.allDoneSub {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.editSectionTitle {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin: 28px 0 12px;
+}
+
+.editRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.editControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.editAttempts {
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 50px;
+  text-align: right;
+}
+
+.editBtn,
+.deleteBtn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  transition: all 0.15s;
+}
+
+.editBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.deleteBtn:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.editStepBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editStepBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.editStepValue {
+  font-size: 18px;
+  font-weight: 800;
+  min-width: 24px;
+  text-align: center;
+}
+
+.editSaveBtn {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.editCancelBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px;
+}

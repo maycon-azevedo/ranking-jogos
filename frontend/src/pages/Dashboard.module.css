@@ -1,0 +1,242 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.greeting {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.streak {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-soft);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.triadGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.triadCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.triadName {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.triadStatus {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.triadIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.ctaBtn {
+  width: 100%;
+  padding: 14px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 28px;
+  transition: opacity 0.2s;
+}
+
+.ctaBtn:hover {
+  opacity: 0.9;
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.highlightLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.highlightGame {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.highlightPlayer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.highlightName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.highlightAttempts {
+  font-size: 12px;
+}
+
+.championBanner {
+  background: var(--accent-soft);
+  border: 1px solid rgba(233, 69, 96, 0.2);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.championInfo {
+  flex: 1;
+}
+
+.championTitle {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.championName {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.championStats {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.provisionalBadge {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: rgba(233, 69, 96, 0.15);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.friendRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.friendInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.friendName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.friendGames {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.friendDots {
+  display: flex;
+  gap: 5px;
+}
+
+.reminderBanner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(233, 69, 96, 0.2);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  animation: fadeIn 0.3s ease;
+}
+
+.emptyText {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 20px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .greeting {
+    font-size: 22px;
+  }
+
+  .triadGrid,
+  .highlightsGrid {
+    grid-template-columns: 1fr;
+  }
+}
